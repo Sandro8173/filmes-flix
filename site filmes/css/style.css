@@ -1,0 +1,290 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+   background-color: black;
+   font-family: "Bebas Neue", sans-serif;
+}
+
+
+div.name h1{
+    color: #e50914c9;
+    text-align: center;
+    font-size: 80px;
+}
+ div.col-md-3 img{
+   margin-bottom: 25px;
+   
+ }
+
+ div.container{
+  margin-top: 50pt;
+
+
+ }
+
+ div.container--bg-info h2{
+    
+      color: #e50914c0;
+      text-align: left;
+ }
+
+ footer p{
+     text-align: center;
+     color: #fff;
+     padding: 10px;
+ }
+ footer p a{
+      color: #e5091488;
+      text-decoration: none;
+      margin: 0px  10px;
+      }
+
+        footer span a:hover{
+          
+         text-shadow:1px 1px 8px #e50914a4 ;
+         border: 1px solid black;
+      
+        }
+      div  img.img-fluid{
+         transition:all 2.2s;
+           border-radius: 7px;  
+            
+        }
+
+     div img.img-fluid:hover{
+         transform: scale(1.3); 
+         transition:2s;
+         border: 1px solid #e5091452;
+         position: absolute;
+         box-shadow: 5px 5px 8px #e5860942;   
+     }   
+
+
+     /*    Menu hamburgue     */
+
+
+     
+a{
+   font-family: sans-serif;
+   text-decoration: none;
+
+}
+
+header.menu{
+    background: rgba(141, 16, 20, 0.8);
+    padding-inline: 16px;
+    margin-bottom: 0px;
+    border-top-left-radius:28px ;
+    border-bottom-right-radius:80px ;
+}
+
+nav.nave{
+   max-width: 1280px;
+   height: 70px;
+   margin-inline: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+nav a.logo{
+  font-size: 48px;
+
+
+}
+
+.list li a{
+  font-size: 27px;
+
+}
+
+
+
+
+nav ul.list{
+  display: flex;
+  gap: 32px;
+  list-style: none;
+ 
+}
+
+  nav ul a:hover{
+  transition: 1.6s;
+  font-size: 33px;
+  font: bold;
+  color: black;
+  text-shadow: 2px 6px 15px white;
+  
+}
+
+
+nav ul a{
+  font-size: 18px;
+  color: #fff;
+  padding-block: 16px;
+
+}
+
+
+.hamburguer{
+     border: none;
+     background: none;
+     border-top: 3px solid #fff;
+     cursor: pointer;
+     text-decoration: none;
+     display: none;
+    
+
+}
+   
+.hamburguer::before,.hamburguer::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+} 
+
+ 
+nav.nave.active .list{
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all ;
+}
+
+
+.nave.active .lis a {
+    opacity: 1;
+}
+ 
+
+nav.nave.active .hamburguer{
+    position: fixed;
+    top: 36px;
+    right: 16px;
+    border-top-color:transparent ;
+
+}
+
+nav.nave.active .hamburguer::before{
+    transform: rotate(135deg);
+    top: 9px;
+}
+ 
+/*   responsivo*/
+  
+
+
+
+@media (max-width:779px) {
+        div.col-md-3{width: 150px;
+         align-items: center;
+         margin-left: 75px; 
+
+  }
+
+   div.container--bg-info h2{
+    
+      color: #e50914c0;
+      text-align: center;
+
+ }
+
+}
+
+
+
+
+@media (max-width:765px) {
+        div.col-md-3{width: 190px;
+         align-items: center;
+         margin-left: 55px; 
+
+  }
+}
+
+
+
+@media (max-width:600px) {
+    .hamburguer{
+         display: block;
+         z-index: 2;
+    }
+    nav ul.list{
+    position: fixed;
+    top:0;
+    left: -28pt;
+    width: 100vh;
+    height: 100vh;
+    background: url("/img/escudo.png") no-repeat ;
+    z-index: 1;
+    clip-path: circle(100px at 90% -15%);
+    transition: 0.4s  ease-in;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+    border-bottom-left-radius:50% ;
+    box-shadow: 2px 2px 45px #e5091452;
+
+  
+}
+
+nav ul a:hover{
+  transition: 1.6s;
+  font-size: 33px;
+  color: #fff;
+  text-shadow: 2px 6px 15px white;
+  
+}
+
+   
+  div img.img-fluid:hover{
+    transform: scale(.90);
+    transition: 1.1s;  
+  }
+
+  div.mg-fluid{
+     width: 50px; 
+      transition: 1.1s;    
+  }
+
+  div.col-md-3{width: 150px;
+    align-items: center;
+    margin-left: 50pt;
+   
+  }
+
+  div.container--bg-info h2{
+    
+      color: #e50914c0;
+      text-align: center;
+
+ }
+ 
+}
+
+     @media (max-width:418px){
+         nav ul.list a{
+               margin-left:-160px;  
+               font-size: 22px;
+                                   
+            }
+
+             nav ul.list {
+                margin-top: -50px;          
+            }
+
+            div.col-md-3{
+            width: 130px;
+            margin-left: 40px;
+
+            }
+     }
+
