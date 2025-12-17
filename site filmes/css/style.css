@@ -283,8 +283,99 @@ nav ul a:hover{
 
             div.col-md-3{
             width: 130px;
-            margin-left: 40px;
+            margin-left: 52px;
 
             }
      }
+
+      @media (max-width:380px) {
+        
+
+         nav ul.list a{
+               margin-left:-262px;  
+               font-size: 22px;
+             
+                              
+               
+            }
+
+             nav ul.list {
+                margin-top: -50px; 
+                  border-radius: 0;
+                  left: -50px;
+                 
+                  margin-top: 0px;
+               
+            }
+       }
+          
+
+        @media (max-width:320px) {
+        
+
+         nav ul.list a{
+               margin-left:-262px;  
+               font-size: 22px;
+             
+                              
+               
+            }
+
+             nav ul.list {
+                margin-top: -50px; 
+                  border-radius: 0;
+                  left: -50px;
+                 
+                  margin-top: 0px;
+               
+            }
+
+
+             div.col-md-3{
+            width: 100px;
+            margin-left: 40px;
+
+            }
+
+             nav ul.list a{
+               margin-left:-202px;  
+               font-size: 22px;
+             
+                              
+               
+            }
+
+             nav ul.list {
+                margin-top: -50px; 
+                  border-radius: 0;
+                  left: 0px;
+                 
+                  margin-top: 0px;
+               
+            }
+       }
+          
+
+       @media (max-width:337px) {
+          nav ul.list a{
+               margin-left:-422px;  
+               font-size: 22px;
+                
+            }
+
+
+             div.col-md-3{
+            width: 100px;
+            margin-left: 40px;
+
+            }
+
+         
+       }
+          
+
+
+        
+
+        
 

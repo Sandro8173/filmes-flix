@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+ *{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+  body{
+     font-family: 'outfit';
+     background-color:black;
+  }
+
+  .contact-container{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content:space-evenly ;
+      margin-top: -90px;
+      margin-left: 50%x;
+  }
+     
+  .contact-left{
+       display: flex;
+       flex-direction: column;
+       align-items: start; 
+       gap: 20px;  }
+
+
+  .contact-left-title h2{
+       font-weight: 600;
+       color: #a11219;
+       font-size: 40px;
+       margin-bottom: 10px;
+       padding-bottom: 10px;
+       padding-top: 10px;
+  }
+
+  .contact-left-title{
+     border: none;
+     width: 220px;
+     height: 8px;
+     background-color: #640a0e;
+     border-radius: 10px;
+     margin-bottom: 300px;
+
+  }
+  .input-contact{
+         width: 350px;
+         height: 40px;
+         border: none;
+         outline: none;
+         padding-left: 25px;
+         margin-bottom: 20px;
+         font-weight: 500;
+         color: #dd353e;
+         border-radius: 50px;
+         background-color: rgba(255, 255, 255, 0.1);
+         transition: all 1.3s;
+          
+
+  }
+
+     .input-contact:hover{
+          transform: scale(1.1);
+          background: rgba(218, 15, 25, 0.2);
+
+
+
+     }
+
+
+  textarea.input-contact {
+        height: 90px;
+        padding-top: 15px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .input-contact:focus{
+      border: 2px solid rgba(90, 8, 8, 0.5);
+  }
+  
+   .input-contact::placeholder{
+          color: rgba(235, 87, 94, 0.3);
+
+   }
+
+
+   .contact-left-title button{
+      display: flex;
+      align-items: center;  
+       padding: 15px 30px;
+       font-size: 16px;
+       color: #dd353e;
+       gap: 10px;
+       border: none;
+       border-radius: 50px;
+       background-color: rgba(90, 8, 8, 0.5);
+       width: 120px;
+       height: 45px;
+       transition: all 1.2s;
+       cursor: pointer;
+
+   }
+
+   .contact-left-title button:hover{
+          transform: scale(0.9);
+
+
+
+   }
+
+     .contact-left-title button img{
+                width:30px;
+     }
+
+     @media (max-width:420px) {
+    .input-contact{
+         width: 120%;
+         height: 40px;
+         border: none;
+         outline: none;
+         padding-left: 25px;
+         margin-bottom: 20px;
+         font-weight: 500;
+         color: #dd353e;
+         border-radius: 50px;
+         background-color: rgba(255, 255, 255, 0.1);
+         transition: all 1.3s;
+         
+  }
+     }
